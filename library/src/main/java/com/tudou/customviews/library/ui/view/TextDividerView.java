@@ -27,6 +27,7 @@ public class TextDividerView extends View {
   private float mTextWidth;
   private float mTextBaseX;
   private float mTextBaseY;
+  private float mTextOffset;
 
   private String mFix = " ";
   private String mText = "or";
@@ -45,8 +46,9 @@ public class TextDividerView extends View {
     mTextColor = getResources().getColor(android.R.color.darker_gray);
     mDividerColor = getResources().getColor(android.R.color.darker_gray);
     mColor = mTextColor;
-    mTextSize = sp2px(10);
+    mTextSize = sp2px(16);
     mRectHeight = dp2px(1.0f);
+    mTextOffset = dp2px(5.0f);
 
     initPainters();
     initRectFs();
@@ -86,12 +88,12 @@ public class TextDividerView extends View {
 
     mDividerRectFPre.left = getPaddingLeft();
     mDividerRectFPre.top = getHeight() / 2 - mRectHeight / 2;
-    mDividerRectFPre.right = getWidth() / 2 - getPaddingLeft() - mTextWidth / 2;
+    mDividerRectFPre.right = getWidth() / 2 - mTextWidth / 2 - mTextOffset;
     mDividerRectFPre.bottom = getHeight() / 2 + mRectHeight / 2;
 
-    mTextBaseX = mDividerRectFPre.right;
+    mTextBaseX = mDividerRectFPre.right + mTextOffset;
 
-    mDividerRectFAfter.left = getWidth() / 2 + mTextWidth / 2;
+    mDividerRectFAfter.left = getWidth() / 2 + mTextWidth / 2 + mTextOffset;
     mDividerRectFAfter.top = getHeight() / 2 - mRectHeight / 2;
     mDividerRectFAfter.right = getWidth() - getPaddingRight();
     mDividerRectFAfter.bottom = getHeight() / 2 + mRectHeight / 2;
