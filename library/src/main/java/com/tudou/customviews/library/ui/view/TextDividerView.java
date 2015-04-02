@@ -112,6 +112,46 @@ public class TextDividerView extends View {
         mDividerRectFAfter.bottom = getHeight() / 2 + mRectHeight / 2;
     }
 
+    public int getTextColor() {
+        return mTextColor;
+    }
+
+    public void setTextColor(int mTextColor) {
+        this.mTextColor = mTextColor;
+    }
+
+    public int getDividerColor() {
+        return mDividerColor;
+    }
+
+    public void setDividerColor(int mDividerColor) {
+        this.mDividerColor = mDividerColor;
+    }
+
+    public float getTextSize() {
+        return mTextSize;
+    }
+
+    public void setTextSize(float mTextSize) {
+        this.mTextSize = mTextSize;
+    }
+
+    public float getRectHeight() {
+        return mRectHeight;
+    }
+
+    public void setRectHeight(float mRectHeight) {
+        this.mRectHeight = mRectHeight;
+    }
+
+    public float getTextOffset() {
+        return mTextOffset;
+    }
+
+    public void setTextOffset(float mTextOffset) {
+        this.mTextOffset = mTextOffset;
+    }
+
     public float dp2px(float dp) {
         final float scale = getResources().getDisplayMetrics().density;
         return dp * scale + 0.5f;
