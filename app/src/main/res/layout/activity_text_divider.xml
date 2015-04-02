@@ -1,12 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-  android:orientation="vertical" android:layout_width="match_parent"
-  android:layout_height="match_parent">
-
-  <com.tudou.customviews.library.ui.view.TextDividerView
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:paddingLeft="50dp"
-    android:paddingRight="50dp"/>
+    android:layout_height="match_parent">
+
+    <com.tudou.customviews.library.ui.view.TextDividerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        app:text_color="@android:color/holo_blue_bright"
+        app:text_size="18sp"
+        app:line_height="4dp"
+        app:text_offset="10dp"
+        app:line_color="@android:color/holo_blue_bright"/>
+
 
 </LinearLayout>
