@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+
+  <com.tudou.customviews.library.ui.view.MoveImageView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:src="@drawable/ic_sign_up_background"
+    android:scaleType="matrix"
+    android:layout_height="match_parent"/>
+
+  </LinearLayout>
+

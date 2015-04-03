@@ -32,12 +32,16 @@ public class MainActivity extends BaseActivity implements AdapterView.OnItemClic
   private void initData() {
     mArrayList = new ArrayList<>();
     mArrayList.add("Text Divider View");
+    mArrayList.add("Move Image View");
   }
 
   @Override public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
       switch (position) {
         case 0:
           startActivity(new Intent(this, TextDividerActivity.class));
+          break;
+        case 1:
+          startActivity(new Intent(this, MoveImageViewActivity.class));
           break;
       }
   }
