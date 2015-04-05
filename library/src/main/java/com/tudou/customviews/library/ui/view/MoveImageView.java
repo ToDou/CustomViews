@@ -148,7 +148,7 @@ public class MoveImageView extends ImageView implements ViewTreeObserver.OnGloba
       mAnimatorSet.addListener(new AnimatorListenerAdapter() {
         @Override public void onAnimationEnd(Animator animation) {
           super.onAnimationEnd(animation);
-          createAnimator();
+          //createAnimator();
         }
       });
       mAnimatorSet.start();
